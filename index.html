@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accenture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="navbar">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Accenture Health Care Private Limited Solutions</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="container">
+        <div class="sidebar">
+          <ul>
+            <li><a href="#" onclick="divVisibility('Div1');">Login User</a></li>
+            <li><a href="#" onclick="divVisibility('Div2');">ProviderRegistration</a></li>
+            <li><a href="#" onclick="divVisibility('Div3');">MemberRegistration</a></li>
+            <li><a href="#" onclick="divVisibility('Div4');">CreateRequest</a></li>
+            <li><a href="#" onclick="divVisibility('Div5');">ApprovedForm</a></li>
+            <li><a href="#" onclick="divVisibility('Div6');">Reports</a></li>
+          </ul>
+        </div>
+        <div class="body1">
+          <div id="Div1">
+            <form action="action_page.php">
+              <div class="imgcontainer">
+                <img src="1.png" alt="Avatar" class="avatar">
+              </div>
+              <div class="container">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password"  name="psw" required><br>
+                
+              </div>
+              <div class="container12" style="background-color:#f1f1f1" >
+                <button type="button" class="submitbtn">Submit</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+                
+              </div>
+            </form>
+            
+          </div>
+          <div id="Div2" style="display: none;">
+            
+            <div id="main_content11" >
+              <div id="container11">
+                <form action="action1_page.php">
+                  
+                  <div class="container">
+                    <h2>ProviderRegistration</h2>
+                    <label for="uname"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br>
+                    <label for="Address"><b>Adress</b></label><br>
+                    <input type="text" placeholder="Enter Address" name="Address" required><br>
+                    <label for="Type"><b>Type</b></label><br>
+                    <input type="radio" name="gender" value="male"> I
+                    <input type="radio" name="gender" value="female">G<br>
+                    <label for="Specialization"><b>Specialization</b></label><br>
+                    <input type="text" placeholder="Enter Specialization" name="Specialization" required><br>
+                    
+                  </div>
+                  <div class="container12" style="background-color:#f1f1f1">
+                    <button type="button" class="submitbtn">Submit</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+          <div id="Div3" style="display: none;">
+            <div id="main_content11" >
+              <div id="container11">
+                <form action="action1_page.php">
+                  
+                  <div class="container">
+                    <h2>MemberRegistration</h2>
+                    <label for="uname"><b>Name</b></label><br>
+                    <input type="text" placeholder="Enter Name" name="uname" required><br>
+                    <label for="Address"><b>Adress</b></label><br>
+                    <input type="text" placeholder="Enter Address" name="Address" required><br>
+                    
+                    <label for="Plan"><b>Phone</b></label><br>
+                    <input type="text" placeholder="Enter PhoneNumber" name="Phone" required><br>
+                    <label for="Plan"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" name="Email" required><br>
+                    <label for="Plan"><b>Plan</b></label><br>
+                    <input type="text" placeholder="Enter Plan" name="Plan" required><br>
+                    
+                  </div>
+                  <div class="container12" style="background-color:#f1f1f1">
+                    <button type="button" class="submitbtn">Submit</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="Div4" style="display: none;">
+            <div id="main_content11" >
+              <div id="container11">
+                <form action="action1_page.php">
+                  
+                  <div class="container">
+                    <h2 >CreateRequest</h2>
+                    <label for="MemberID"><b>MemberID</b></label><br>
+                    <input type="text" placeholder="Enter ID" name="MemberID" required><br>
+                    <label for="uname"><b>Name</b></label><br>
+                    <input type="text" placeholder="Enter Name" name="uname" required><br>
+                    <label for="Address"><b>Adress</b></label><br>
+                    <input type="text" placeholder="Enter Address" name="Address" required><br>
+                    
+                    <label for="Provider"><b>Provider</b></label><br>
+                    <input type="text" placeholder="Enter Provider" name="Provider" required><br>
+                    <label for="Specialization"><b>specialization</b></label><br>
+                    <input type="text" placeholder="Enter Specialization" name="Specialization" required><br>
+                    <label for="Allocated"><b>Allocated Date</b></label><br>
+                    <input type="date" name="Allocated date">
+                    
+                  </div>
+                  <div class="container12" style="background-color:#f1f1f1">
+                    <button type="button" class="submitbtn">Submit</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="Div5" style="display: none;">
+            <div id="main_content11" >
+              <div id="container11">
+                <form action="action1_page.php">
+                  
+                  <div class="container">
+                    <h2>ApprovedForm</h2>
+                    <label for="Request_ID"><b>Request_ID</b></label><br>
+                    <input type="text" placeholder="Enter ID" name="MemberID" required><br><br>
+                    <button type="button" class="bulkbtn">Bulk Approval</button>
+                    
+                    
+                  </div>
+                  <div class="container12" style="background-color:#f1f1f1">
+                    <button type="button" class="submitbtn">Submit</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="Div6" style="display: none;">
+            <div id="main_content11" >
+              <div id="container11">
+                <form action="action1_page.php">
+                  
+                  <div class="container">
+
+
+                    <h2>Reports</h2><br><br><br>
+                    <label for="uname"><b>Location</b></label><br>
+                    <select name="location_id" id="location_id">
+                      
+                      <option value="1">Kothapet</option>
+                      <option value="2">DilsukhNagar</option>
+                      <option value="3">L.B Nagar</option>
+                    </select><br><br><br>
+
+                     <label for="uname"><b>Specialization</b></label><br>
+                    <select name="specialization_id" id="specialization_id">
+                      
+                      <option value="1">physician</option>
+                      <option value="2">Dental</option>
+                      <option value="3">Orthopedic</option>
+                    </select>
+                    
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+    </div>
